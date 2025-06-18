@@ -33,12 +33,12 @@ This project uses two datasets to explore occupational opportunities and demogra
 
 ### 🌐 Data Source
 
-American Community Survey (ACS) Public Use Microdata Sample (PUMS) from the U.S. Census Bureau.  
-- Accessed via: https://www.census.gov/programs-surveys/acs/microdata.html
+American Community Survey (ACS) Public Use Microdata 5-year Sample (PUMS) from the U.S. Census Bureau.  
+- Accessed via: https://www.census.gov/programs-surveys/acs/microdata.html](https://www2.census.gov/programs-surveys/acs/data/pums/2023/5-Year/csv_pus.zip
 
 ---
 
-## Dataset 2: Kentucky Occupational Outlook (oo_raw.xlsx)
+## Dataset 2: Kentucky Center for Statistics (KY STATS) Occupational Outlook-2022 to 2032 (oo_raw.xlsx)
 
 ### 📘 Data Dictionary
 
@@ -80,6 +80,6 @@ American Community Survey (ACS) Public Use Microdata Sample (PUMS) from the U.S.
 ### 🌐 Data Source
 
 Kentucky Center for Statistics (KYSTATS) - Occupational Outlook Tool  
-- Accessed via: https://kystats.ky.gov/Reports/Tableau/OO
+- Accessed via: https://kystats.ky.gov/Latest/OCC
 
 ---
