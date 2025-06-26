@@ -1,12 +1,12 @@
 # Capstone Project: Prison to Profession
 
-This project uses two datasets to explore occupational opportunities and demographics for formerly incarcerated individuals. Below are detailed documentation sections for both datasets used.
+This project uses three datasets to explore occupational opportunities and demographics for formerly incarcerated individuals. Below are detailed documentation sections for both datasets used.
 
 ---
 
 ## Dataset 1: ACS Microdata (acs_raw.csv)
 
-### 📘 Data Dictionary
+### Data Dictionary
 
 | Column | Description |
 |--------|-------------|
@@ -23,15 +23,17 @@ This project uses two datasets to explore occupational opportunities and demogra
 | COW    | Class of worker |
 | WKHP   | Usual hours worked per week |
 
-### 📊 Data Summary
+### Data Summary
 
 - **Total Rows:** 224,220  
 - **Total Columns:** 12  
 - **Missing Values:** Several columns have missing data, especially `OCCP`, `COW`, `WKHP`, and `ESR`, reflecting incomplete responses or non-working individuals.
 - **Demographics:** Includes a wide age range and diverse racial/ethnic identities.
 - **Employment:** `WAGP` and `ESR` allow analysis of wages and employment status, particularly relevant for economic outcomes post-incarceration.
+- **Integration:** Will join to the main Occupational Outlook dataset using an `occupation` column where job codes are mapped using a crosswalk.
 
-### 🌐 Data Source
+
+### Data Source
 
 American Community Survey (ACS) Public Use Microdata 5-year Sample (PUMS) from the U.S. Census Bureau.  
 - Accessed via: https://www.census.gov/programs-surveys/acs/microdata.html](https://www2.census.gov/programs-surveys/acs/data/pums/2023/5-Year/csv_pus.zip
@@ -40,7 +42,7 @@ American Community Survey (ACS) Public Use Microdata 5-year Sample (PUMS) from t
 
 ## Dataset 2: Kentucky Center for Statistics (KY STATS) Occupational Outlook-2022 to 2032 (oo_raw.xlsx)
 
-### 📘 Data Dictionary
+### Data Dictionary
 
 | Column | Description |
 |--------|-------------|
@@ -68,7 +70,7 @@ American Community Survey (ACS) Public Use Microdata 5-year Sample (PUMS) from t
 | Typical Work Experience Required in Related Occupation | Prior experience typically required |
 | Typical On-the-Job Training Required to Achieve Competency | Training required to reach full competence |
 
-### 📊 Data Summary
+### Data Summary
 
 - **Total Rows:** 5,245  
 - **Total Columns:** 23  
@@ -76,10 +78,35 @@ American Community Survey (ACS) Public Use Microdata 5-year Sample (PUMS) from t
 - **Wage Data:** Comprehensive wage data including percentiles, entry, and experienced wages.
 - **Training & Education:** Includes education level and training requirements for each occupation.
 - **Missing Values:** Some fields (e.g., `SOC Classification`, `Work Experience`, and `On-the-Job Training`) have missing values, especially for aggregated or undefined roles.
+- **Integration:** Will join to the main ACS dataset using an `occupation` column where job codes are mapped using a crosswalk.
 
-### 🌐 Data Source
+### Data Source
 
 Kentucky Center for Statistics (KYSTATS) - Occupational Outlook Tool  
 - Accessed via: https://kystats.ky.gov/Latest/OCC
 
 ---
+
+---
+
+## Dataset 3: ACS Housing Type by PUMA (puma_raw.csv)
+
+### Data Dictionary
+
+| Column    | Description |
+|-----------|-------------|
+| SERIALNO  | Unique housing unit identifier |
+| TYPEHUGQ  | Type of housing unit or group quarters (e.g., household, institutional, non-institutional) |
+
+### Data Summary
+
+- **Total Rows:** 22,482  
+- **Total Columns:** 2  
+- **Purpose:** Used to determine whether each housing unit is part of the institutional or non-institutional group quarters population, which includes incarcerated individuals.
+- **Missing Values:** None. All rows have valid entries for both columns.
+- **Integration:** Will join to the main ACS dataset using the `SERIALNO` column.
+
+### Data Source
+
+American Community Survey (ACS) Public Use Microdata 5-year Sample (PUMS) — Housing Unit Records  
+- Accessed via: [https://www.census.gov/programs-surveys/acs/microdata.html](https://www2.census.gov/programs-surveys/acs/data/pums/2023/5-Year/csv_hus.zip)
