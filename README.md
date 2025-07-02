@@ -1,10 +1,10 @@
 # Capstone Project: Prison to Profession
 
-This project uses three datasets to explore occupational opportunities and demographics for formerly incarcerated individuals. Below are detailed documentation sections for both datasets used.
+This project uses three datasets to explore occupational opportunities and demographics for formerly incarcerated individuals. Below are detailed documentation sections for all datasets used.
 
 ---
 
-## Dataset 1: ACS Microdata (acs_raw.csv)
+## Dataset 1: ACS Demographic Microdata (acsd_raw.csv)
 
 ### Data Dictionary
 
@@ -89,7 +89,7 @@ Kentucky Center for Statistics (KYSTATS) - Occupational Outlook Tool
 
 ---
 
-## Dataset 3: ACS Housing Type by PUMA (puma_raw.csv)
+## Dataset 3: ACS Housing Microdata (acsh_raw.csv)
 
 ### Data Dictionary
 
