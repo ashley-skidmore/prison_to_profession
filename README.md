@@ -1,6 +1,107 @@
-# Capstone Project: Prison to Profession
+# Prison to Profession
 
-This project uses three datasets to explore occupational opportunities and demographics for formerly incarcerated individuals. Below are detailed documentation sections for all datasets used.
+This capstone project explores the intersection of incarceration, education, and employment opportunities in Kentucky. By analyzing demographic microdata and occupational projections, the project highlights how educational attainment among formerly incarcerated individuals aligns--or fails to align—-with high-demand, high-wage jobs in the state.
+
+## Project Setup Instructions
+
+Follow these steps to set up and run this project on your own computer. No prior coding experience is required.
+
+### 1. Open a Terminal or Command Prompt
+
+- **On Windows:** Press the Windows key, type `cmd`, and press Enter to open the Command Prompt.
+- **On Mac:** Open the Terminal app (found in Applications > Utilities).
+- **On Linux:** Open your Terminal from the Applications menu.
+
+### 2. Clone the Project Repository
+
+Type the following commands into the terminal window:
+
+git clone https://github.com/ashley-skidmore/prison_to_profession
+cd prison_to_profession
+
+This downloads the project files onto your computer.
+
+### 3. Create a Virtual Environment
+
+A virtual environment keeps your project’s packages organized and separate from other programs. In the terminal window, enter:
+
+**On Windows:**
+python -m venv venv
+venv\Scripts\activate
+
+**On Mac/Linux:**
+python3 -m venv venv
+source venv/bin/activate
+
+### 4. Install Required Packages
+
+With the virtual environment active, install the required tools by entering:
+
+pip install -r requirements.txt
+
+### 5. Launch the Project in Jupyter Notebook
+
+In the same terminal or command prompt, enter the following command:
+
+jupyter notebook
+
+After a few seconds, your default web browser will open automatically and show a list of project files.
+
+If your browser doesn’t open automatically, copy the link shown in the terminal (it usually starts with `http://localhost:`) and paste it into your browser’s address bar.
+
+## Project Overview
+
+This project examines how the educational attainment of incarcerated individuals in Kentucky compares to the education typically required for high-wage, high-demand jobs in the state.
+
+Using public microdata from the U.S. Census Bureau and labor market projections from the Kentucky Center for Statistics, the analysis identifies broad gaps between current education levels in the incarcerated population and the general qualifications needed to access stable, well-paying careers.
+
+By cleaning, merging, and analyzing multiple datasets, the project helps highlight the need for expanded prison education programs as a way to improve economic mobility and reduce recidivism.
+
+The repository is organized as follows:
+- `data/`: Raw and cleaned datasets in CSV and SQLite format  
+- `notebooks/`: Jupyter Notebooks for cleaning, analysis, and visualizations  
+- `plots/`: Saved charts used in the dashboard and final report  
+- `deliverables/`: Project documents and submission materials  
+- `docs/`: Reference materials, including the Census Bureau data dictionary, census data README, and a job code crosswalk
+
+The results are presented in an interactive Tableau dashboard designed for policymakers, educators, and the general public.
+
+## Tableau Dashboard
+
+Explore the interactive dashboard here:  
+**[Prison to Profession – Tableau Public](https://public.tableau.com/app/profile/ashley.skidmore/viz/prison_to_profession_dashboard/PrisontoProfession)**
+
+## Technologies Used
+
+- **Jupyter Notebook**  
+  Used to document the entire data cleaning and analysis process in a step-by-step, interactive format.
+
+- **Python**  
+  The main programming language used for all data processing and analysis tasks.
+
+- **Pandas**  
+  Used extensively to load, clean, transform, and merge datasets.
+
+- **NumPy**  
+  Helped with simple math operations and made it easier to work with numeric data.
+
+- **Matplotlib**  
+  Provided plotting functionality and was used for custom-styled visualizations throughout the project.
+  
+- **Seaborn**  
+  Used alongside Matplotlib to create informative and aesthetically pleasing data visualizations.
+
+- **SQLite**  
+  Used to store cleaned data and join datasets efficiently.
+
+- **OS**  
+  Used to manage file paths and ensure plots were saved to the correct directories.
+
+- **Sys**  
+ Helped the notebooks find and use shared functions saved in a different folder.
+
+- **Typing**  
+   Helped label what kind of input each function expects, which makes the code easier to understand.
 
 ---
 
@@ -84,8 +185,6 @@ American Community Survey (ACS) Public Use Microdata 5-year Sample (PUMS) from t
 
 Kentucky Center for Statistics (KYSTATS) - Occupational Outlook Tool  
 - Accessed via: https://kystats.ky.gov/Latest/OCC
-
----
 
 ---
 
