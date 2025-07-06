@@ -61,7 +61,7 @@ The repository is organized as follows:
 - `data/`: Raw and cleaned datasets in CSV and SQLite format  
 - `notebooks/`: Jupyter Notebooks for cleaning, analysis, and visualizations  
 - `plots/`: Saved charts used in the dashboard and final report  
-- `deliverables/`: Project documents and submission materials  
+- `deliverables/`: Final project summary, presentation, and dashboard
 - `docs/`: Reference materials, including the Census Bureau data dictionary, census data README, and a job code crosswalk
 
 The results are presented in an interactive Tableau dashboard designed for policymakers, educators, and the general public.
