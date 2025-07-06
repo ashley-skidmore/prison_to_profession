@@ -1,6 +1,6 @@
 # Prison to Profession
 
-This capstone project explores the intersection of incarceration, education, and employment opportunities in Kentucky. By analyzing demographic microdata and occupational projections, the project highlights how educational attainment among formerly incarcerated individuals aligns--or fails to align—-with high-demand, high-wage jobs in the state.
+This project explores the intersection of incarceration, education, and employment opportunities in Kentucky. By analyzing demographic microdata and occupational projections, the project highlights how educational attainment among incarcerated individuals aligns--or fails to align—-with high-demand, high-wage jobs in the state.
 
 ## Project Setup Instructions
 
@@ -63,6 +63,7 @@ The repository is organized as follows:
 - `plots/`: Saved charts used in the dashboard and final report  
 - `deliverables/`: Final project summary, presentation, and dashboard
 - `docs/`: Reference materials, including the Census Bureau data dictionary, census data README, and a job code crosswalk
+- `main.ipynb`: Jupyter Notebook where cleaned data is merged and visualized
 
 The results are presented in an interactive Tableau dashboard designed for policymakers, educators, and the general public.
 
