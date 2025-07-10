@@ -88,9 +88,15 @@ Explore the interactive dashboard here:
 
 - **Matplotlib**  
   Provided plotting functionality and was used for custom-styled visualizations throughout the project.
-  
+
 - **Seaborn**  
   Used alongside Matplotlib to create informative and aesthetically pleasing data visualizations.
+
+- **Plotly Express**  
+  Used to make an interactive scatterplot.
+
+- **Plotly Graph Objects**  
+  Helped customize the scatterplot by adding hover text, adjusting layout, and making the chart easier to read.
 
 - **SQLite**  
   Used to store cleaned data and join datasets efficiently.
@@ -128,7 +134,7 @@ Explore the interactive dashboard here:
 ### Data Summary
 
 - **Total Rows:** 224,220  
-- **Total Columns:** 12  
+- **Total Columns:** 13  
 - **Missing Values:** Several columns have missing data, especially `OCCP`, `COW`, `WKHP`, and `ESR`, reflecting incomplete responses or non-working individuals.
 - **Demographics:** Includes a wide age range and diverse racial/ethnic identities.
 - **Employment:** `WAGP` and `ESR` allow analysis of wages and employment status, particularly relevant for economic outcomes post-incarceration.
@@ -138,7 +144,7 @@ Explore the interactive dashboard here:
 ### Data Source
 
 American Community Survey (ACS) Public Use Microdata 5-year Sample (PUMS) from the U.S. Census Bureau.  
-- Accessed via: https://www.census.gov/programs-surveys/acs/microdata.html](https://www2.census.gov/programs-surveys/acs/data/pums/2023/5-Year/csv_pus.zip
+- Accessed via: https://www.census.gov/programs-surveys/acs/microdata.html](https://www2.census.gov/programs-surveys/acs/data/pums/2023/5-Year/csv_pus.zip)
 
 ---
 
