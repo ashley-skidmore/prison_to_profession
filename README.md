@@ -144,7 +144,7 @@ Explore the interactive dashboard here:
 ### Data Source
 
 American Community Survey (ACS) Public Use Microdata 5-year Sample (PUMS) from the U.S. Census Bureau.  
-- Accessed via: https://www.census.gov/programs-surveys/acs/microdata.html](https://www2.census.gov/programs-surveys/acs/data/pums/2023/5-Year/csv_pus.zip)
+- Accessed via: [https://www.census.gov/programs-surveys/acs/microdata.html](https://www2.census.gov/programs-surveys/acs/data/pums/2023/5-Year/csv_pus.zip)
 
 ---
 
