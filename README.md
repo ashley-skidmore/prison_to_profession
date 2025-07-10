@@ -70,7 +70,7 @@ The results are presented in an interactive Tableau dashboard designed for polic
 ## Tableau Dashboard
 
 Explore the interactive dashboard here:  
-**[Prison to Profession – Tableau Public](https://public.tableau.com/app/profile/ashley.skidmore/viz/prison_to_profession_dashboard/PrisontoProfession)**
+**[Prison to Profession – Tableau Public](https://public.tableau.com/app/profile/ashley.skidmore/viz/prison_to_profession_dashboard_17521848745460/PrisontoProfession)**
 
 ## Technologies Used
 
