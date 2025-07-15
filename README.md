@@ -16,7 +16,7 @@ Follow these steps to set up and run this project on your own computer. No prior
 
 Type the following commands into the terminal window:
 
-git clone https://github.com/ashley-skidmore/prison_to_profession
+git clone https://github.com/ashley-skidmore/prison_to_profession  
 cd prison_to_profession
 
 This downloads the project files onto your computer.
@@ -26,11 +26,11 @@ This downloads the project files onto your computer.
 A virtual environment keeps your project’s packages organized and separate from other programs. In the terminal window, enter:
 
 **On Windows:**
-python -m venv venv
+python -m venv venv  
 venv\Scripts\activate
 
 **On Mac/Linux:**
-python3 -m venv venv
+python3 -m venv venv  
 source venv/bin/activate
 
 ### 4. Install Required Packages
@@ -62,7 +62,7 @@ The repository is organized as follows:
 - `notebooks/`: Jupyter Notebooks for cleaning, analysis, and visualizations  
 - `plots/`: Saved charts used in the dashboard and final report  
 - `deliverables/`: Final project summary, presentation, and dashboard
-- `docs/`: Reference materials, including the Census Bureau data dictionary, census data README, and a job code crosswalk
+- `docs/`: Reference materials, including the Census Bureau data dictionary, Census data README, and a job code crosswalk
 - `main.ipynb`: Jupyter Notebook where cleaned data is merged and visualized
 
 The results are presented in an interactive Tableau dashboard designed for policymakers, educators, and the general public.
@@ -75,40 +75,40 @@ Explore the interactive dashboard here:
 ## Technologies Used
 
 - **Jupyter Notebook**  
-  Used to document the entire data cleaning and analysis process in a step-by-step, interactive format.
+  Used to document the entire data cleaning and analysis process in a step-by-step, interactive format
 
 - **Python**  
-  The main programming language used for all data processing and analysis tasks.
+  The main programming language used for all data processing and analysis tasks
 
 - **Pandas**  
-  Used extensively to load, clean, transform, and merge datasets.
+  Used extensively to load, clean, transform, and merge datasets
 
 - **NumPy**  
-  Helped with simple math operations and made it easier to work with numeric data.
+  Helped with simple math operations and made it easier to work with numeric data
 
 - **Matplotlib**  
-  Provided plotting functionality and was used for custom-styled visualizations throughout the project.
+  Provided plotting functionality and was used for custom-styled visualizations throughout the project
 
 - **Seaborn**  
-  Used alongside Matplotlib to create informative and aesthetically pleasing data visualizations.
+  Used alongside Matplotlib to create informative and aesthetically pleasing data visualizations
 
 - **Plotly Express**  
-  Used to make an interactive scatterplot.
+  Used to make an interactive scatterplot
 
 - **Plotly Graph Objects**  
-  Helped customize the scatterplot by adding hover text, adjusting layout, and making the chart easier to read.
+  Helped customize the scatterplot by adding hover text, adjusting layout, and making the chart easier to read
 
 - **SQLite**  
-  Used to store cleaned data and join datasets efficiently.
+  Used to store cleaned data and join datasets efficiently
 
 - **OS**  
-  Used to manage file paths and ensure plots were saved to the correct directories.
+  Used to manage file paths and ensure plots were saved to the correct directories
 
 - **Sys**  
- Helped the notebooks find and use shared functions saved in a different folder.
+ Helped the notebooks find and use shared functions saved in a different folder
 
 - **Typing**  
-   Helped label what kind of input each function expects, which makes the code easier to understand.
+   Helped label what kind of input each function expects, which makes the code easier to understand
 
 ---
 
