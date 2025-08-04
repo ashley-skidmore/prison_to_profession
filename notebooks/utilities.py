@@ -9,23 +9,11 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
-from typing import Dict, Optional, Union  
-"""
-Mapping function: Dict for mapping dictionaries, Optional for allowing None values
-Null handling function: Union means the value can be any of the listed types, like str, int, or float
-"""
-import re
-"""
-Normalize columns function: regular expressions to convert column names
-"""
-
 
 # ## Exploratory Data Analysis Function
 
 # In[ ]:
 
-
-import pandas as pd
 
 def basic_eda(df: pd.DataFrame, show_head: bool = True, show_tail: bool = True, show_info: bool = True) -> None:
     """
@@ -39,7 +27,7 @@ def basic_eda(df: pd.DataFrame, show_head: bool = True, show_tail: bool = True, 
         show_info: Whether to display df.info(). Default is True.
 
     Returns:
-        None. Outputs printed summaries to the console.
+        None. Creates a printed summary.
     """
 
     print("DataFrame Shape:", df.shape)
@@ -55,7 +43,7 @@ def basic_eda(df: pd.DataFrame, show_head: bool = True, show_tail: bool = True, 
 
     print("\n Null Values (%):")
     nulls = df.isnull().mean() * 100 #mean will give the decimal of total missing values and  * 100 will turn that into a percentage
-    print(nulls[nulls > 0].round(2).sort_values(ascending=False)) #only displays columns with nulls, round the percen to 2 decimal places, and sorts high to low
+    print(nulls[nulls > 0].round(2).sort_values(ascending=False)) #only displays columns with nulls, round the percent to 2 decimal places, and sorts high to low
 
     if show_head:
         print("\n Preview (Head):")
@@ -98,14 +86,14 @@ def styled_plot(title: str, xlabel: str, ylabel: str, fontsize: int = 12) -> str
     plt.ylabel(ylabel, fontsize=fontsize, color=label_color)
     plt.tick_params(axis='both', labelsize=fontsize - 1, colors=spine_color)
 
-    ax = plt.gca()
-    ax.spines["top"].set_visible(False)
-    ax.spines["right"].set_visible(False)
-    ax.spines["left"].set_color(spine_color)
-    ax.spines["bottom"].set_color(spine_color)
-    plt.grid(False)
+    ax = plt.gca() # Get current plot
+    ax.spines["top"].set_visible(False) # Hide top border
+    ax.spines["right"].set_visible(False) # Hide right border
+    ax.spines["left"].set_color(spine_color) # Set left border color
+    ax.spines["bottom"].set_color(spine_color) # Set bottom border color
+    plt.grid(False) #Turn off background grid
 
-    return plot_color #variable to use for a consistent color when making plots
+    return plot_color #variable to use outside of the function for a consistent color when making plots
 
 
 # ## Image File Function
@@ -132,10 +120,10 @@ def save_plot(filename: str, folder: str = "plots", dpi: int = 300) -> None:
     # Create the folder if it doesn't exist
     os.makedirs(folder, exist_ok=True)
 
-    # Build full file path
+    # Build file path
     filepath = os.path.join(folder, filename)
 
     # Save the figure
-    plt.savefig(filepath, dpi=dpi, bbox_inches='tight')
+    plt.savefig(filepath, dpi=dpi, bbox_inches='tight') # Tight trims the white space around the plot
     print(f"Plot saved to: {filepath}")
 
